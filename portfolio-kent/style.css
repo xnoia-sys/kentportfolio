@@ -1,0 +1,414 @@
+/* GENERAL STYLE */
+
+body {
+    margin 0;
+    padding: 0;
+    background-color: #000;
+    color: #e5e9f0;
+    font-family: "Saira", sans-serif;
+    font-size: 13px;
+}
+
+
+/* NAVIGATION */
+
+.header {
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 90%;
+    margin: 0 0 100px 50px;
+
+    border-spacing: 0;
+    background: #000000;
+}
+
+
+.logo {
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation {
+    text-align: right;
+}
+
+.navigation a {
+    color: #b8c0cc;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+
+
+/* HOME */
+
+.hero {
+    width: 83%;
+    margin: 0 auto 100px;
+    border-spacing: 0;
+}
+
+.hero-text {
+    width: 55%;
+    vertical-align: middle;
+}
+
+.eyebrow {
+    color: #9ba5b5;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    color: #e5e9f0;
+    font-size: 68px;
+    letter-spacing: 8px;
+    margin: 12px 0;
+}
+
+.role {
+    color: #aeb7c5;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin: 8px 0 30px;
+}
+
+.description {
+    color: #c1c7d0;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.hero-picture {
+    width: 45%;
+    text-align: right;
+}
+
+.hero-picture img {
+    width: 100%;
+    height: 330px;
+    border: 1px solid #343c48;
+    border-radius: 30px;
+}
+
+.round-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #687383;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.scroll-text {
+    color: #aeb7c5;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-left: 12px;
+}
+
+
+/* PANELS */
+
+.panel {
+    width: 86%;
+    margin: 0 auto 65px;
+    padding: 40px;
+    background-color: #030507;
+    border: 1px solid #202630;
+    border-radius: 25px;
+    border-spacing: 25px;
+}
+
+h2 {
+    color: #e5e9f0;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 0 0 10px;
+}
+
+
+/* ABOUT */
+
+.about-text {
+    width: 50%;
+    vertical-align: middle;
+    padding-right: 0;
+    padding-left: 30px;
+    float: right;
+}
+
+.about-picture {
+    width: 50%;
+    float: left;
+}
+
+.about-picture img {
+    width: 100%;
+    height: 315px;
+    border-radius: 20px;
+}aw
+
+/* BUTTON LINKS */
+
+.outline-link {
+    display: inline-block;
+    color: #dce2eb;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 1px;
+    border: 1px solid #394250;
+    border-radius: 25px;
+    padding: 13px 20px;
+    margin-top: 15px;
+}
+
+
+/* SKILLS */
+
+.section {
+    width: 84%;
+    margin: 0 auto 80px;
+}
+
+.card-table {
+    width: 100%;
+    border-spacing: 20px;
+    margin-left: -20px;
+}
+
+.skill-card {
+    width: 25%;
+    height: 175px;
+    padding: 20px;
+    vertical-align: bottom;
+    border: 1px solid #242b36;
+    border-radius: 15px;
+    background-color: #080b10;
+}
+
+.skill-icon {
+    color: #e5e9f0;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.skill-card p {
+    color: #e5e9f0;
+    font-size: 12px;
+}
+
+.skill-card span {
+    float: right;
+    color: #c6ccd5;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: #29313c;
+    border-radius: 10px;
+}
+
+.python-bar,
+.html-bar,
+.css-bar,
+.design-bar {
+    height: 5px;
+    background-color: #d7dde6;
+    border-radius: 10px;
+}
+
+.python-bar {
+    width: 85%;
+}
+
+.html-bar {
+    width: 90%;
+}
+
+.css-bar {
+    width: 95%;
+}
+
+.design-bar {
+    width: 95%;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    border-spacing: 15px;
+}
+
+.projects h2 {
+    margin-bottom: 15px;
+}
+
+.featured {
+    color: #9ba5b5;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.project-card {
+    width: 50%;
+    padding: 18px;
+    vertical-align: top;
+    border: 1px solid #242b36;
+    border-radius: 15px;
+    background-color: #06090d;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.project-card h3 {
+    color: #e0e5ed;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    color: #aeb7c5;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.tags {
+    color: #b4bdc9;
+    letter-spacing: 1px;
+    margin-top: 18px;
+}
+
+
+/* ACHIEVEMENTS */
+
+.achievements {
+    border-spacing: 15px;
+}
+
+.achievement-card {
+    width: 50%;
+    height: 210px;
+    padding: 25px;
+    vertical-align: top;
+    border: 1px solid #242b36;
+    border-radius: 15px;
+    background-color: #070a0e;
+}
+
+.achievement-icon {
+    color: #dce2eb;
+    font-size: 25px;
+}
+
+.achievement-card h3 {
+    color: #dce1e9;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.achievement-card p {
+    color: #aeb7c5;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.achievement-card small {
+    color: #aab3c0;
+    font-size: 9px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    border-spacing: 15px;
+}
+
+.contact-details {
+    width: 35%;
+    padding-right: 25px;
+    border-right: 1px solid #252d38;
+    vertical-align: top;
+}
+
+.contact-details p {
+    color: #b7c0cc;
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+.contact-fields {
+    width: 65%;
+    vertical-align: top;
+}
+
+.contact-fields input,
+.contact-fields textarea {
+    width: 96%;
+    color: #e2e7ef;
+    background-color: #070a0e;
+    border: 1px solid #29313d;
+    border-radius: 9px;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-family: "Saira", sans-serif;
+    font-size: 11px;
+}
+
+.contact-fields button {
+    color: #cbd3de;
+    background-color: #080b10;
+    border: 1px solid #374150;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-family: "Saira", sans-serif;
+    font-size: 10px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 86%;
+    margin: 0 auto;
+    color: #7f8998;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.footer-links {
+    text-align: right;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
