@@ -1,0 +1,674 @@
+
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    margin: 0;
+    background-color: #101313;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background-color: #101313;
+    padding: 15px 0;
+    border-bottom: 1px solid #303535;
+    text-align: center;
+
+    /* STICKY NAVIGATION */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 14px;
+    padding: 10px 3px;
+    display: block;
+
+    /* SMOOTH TRANSITION */
+    transition: color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.nav-links li a.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+
+/* HOME */
+.hero {
+    width: 100%;
+    background-color: #202424;
+    padding: 85px 0;
+}
+
+.hero-table {
+    width: 85%;
+    margin: 0 auto;
+    border-spacing: 0;
+}
+
+.hero-table td {
+    width: 50%;
+    vertical-align: middle;
+    padding: 25px 30px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 46px;
+    margin: 0 0 15px;
+}
+
+.hero-text h2 {
+    font-size: 27px;
+    margin: 0 0 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 30px;
+}
+
+.work-button {
+    display: inline-block;
+    background-color: #eeeeee;
+    color: #101313;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-size: 15px;
+
+    /* SMOOTH BUTTON TRANSITION */
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                opacity 0.3s ease;
+}
+
+.work-button:hover {
+    background-color: #cccccc;
+    transform: translateY(-3px);
+}
+
+.work-button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    width: 290px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+/* ABOUT */
+#about {
+    background-color: #151919;
+    text-align: center;
+    padding: 55px 30px;
+    border-bottom: 1px solid #303535;
+}
+
+#about h2 {
+    font-size: 34px;
+    margin: 0 0 22px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* SKILLS */
+#skills {
+    background-color: #191e1e;
+    text-align: center;
+    padding: 55px 30px 65px;
+}
+
+#skills h2 {
+    font-size: 34px;
+    margin: 0 0 35px;
+}
+
+.skills-table {
+    width: 90%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-spacing: 20px 0;
+}
+
+.skills-table td {
+    width: 33.33%;
+    text-align: center;
+    vertical-align: top;
+    padding: 30px 20px;
+    border: 1px solid #414747;
+    border-radius: 20px;
+}
+
+
+/* SKILLS LOGO */
+.skills-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* COMPUTER SKILLS LOGO */
+.skills-table td:nth-child(3) .skills-logo {
+    width: 80px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.skills-table h3 {
+    font-size: 21px;
+    margin: 0 0 18px;
+}
+
+.skills-table p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* PROJECTS */
+#projects {
+    background-color: #151919;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+#projects h2 {
+    font-size: 34px;
+    margin: 0 0 38px;
+}
+
+.projects-table {
+    width: 90%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-spacing: 20px 0;
+}
+
+.projects-table td {
+    width: 33.33%;
+    text-align: left;
+    vertical-align: top;
+    padding: 25px;
+    border: 1px solid #414747;
+    border-radius: 15px;
+}
+
+.projects-table img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.projects-table h3 {
+    font-size: 19px;
+    margin: 15px 0 12px;
+}
+
+.projects-table p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* CONTACT */
+#contact {
+    width: 85%;
+    margin: 55px auto 35px;
+    padding: 35px;
+    background-color: #202424;
+    border: 1px solid #303535;
+    border-radius: 15px;
+}
+
+.contact-table {
+    width: 100%;
+    border-spacing: 25px 0;
+}
+
+.contact-table td {
+    width: 50%;
+    vertical-align: middle;
+}
+
+.contact-info {
+    text-align: left;
+    padding: 15px;
+}
+
+.contact-info h2 {
+    font-size: 27px;
+    margin: 0 0 20px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 12px 15px;
+    margin: 7px 0;
+    box-sizing: border-box;
+    background-color: #171b1b;
+    color: #eeeeee;
+    border: 1px solid #383e3e;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.contact-form textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #eeeeee;
+    color: #101313;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+
+    /* SMOOTH BUTTON TRANSITION */
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                opacity 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #cccccc;
+    transform: translateY(-3px);
+}
+
+.contact-form button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #a6afbf;
+    background-color: #101313;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 15px 10px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+        padding: 8px 2px;
+    }
+
+
+    /* HOME */
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero-table {
+        width: 90%;
+        border-spacing: 0;
+    }
+
+    .hero-table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+        max-width: 100%;
+    }
+
+
+    /* ABOUT */
+    #about {
+        padding: 45px 25px;
+    }
+
+    #about h2 {
+        font-size: 30px;
+    }
+
+    #about p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+    /* SKILLS */
+    #skills {
+        padding: 45px 15px;
+    }
+
+    #skills h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .skills-table {
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    .skills-table td {
+        display: block;
+        width: 100%;
+        padding: 25px 15px;
+        margin-bottom: 20px;
+    }
+
+    .skills-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skills-table td:nth-child(3) .skills-logo {
+        width: 80px;
+        height: 50px;
+    }
+
+
+    /* PROJECTS */
+    #projects {
+        padding: 45px 15px;
+    }
+
+    #projects h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .projects-table {
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    .projects-table td {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .projects-table img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+
+    /* CONTACT */
+    #contact {
+        width: 90%;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .contact-table {
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    .contact-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .contact-info {
+        padding: 10px 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 20px 10px;
+        font-size: 11px;
+    }
+}
+
+
+/* SMALL MOBILE PHONES */
+@media screen and (max-width: 480px) {
+
+    /* NAVBAR */
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 12px;
+    }
+
+
+    /* HOME */
+    .hero-text h1 {
+        font-size: 29px;
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .work-button {
+        padding: 12px 24px;
+        font-size: 13px;
+    }
+
+
+    /* ABOUT */
+    #about {
+        padding: 40px 20px;
+    }
+
+    #about h2 {
+        font-size: 27px;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+
+    /* SKILLS */
+    #skills h2,
+    #projects h2 {
+        font-size: 27px;
+    }
+
+    .skills-table td {
+        padding: 25px 12px;
+    }
+
+    .skills-table h3 {
+        font-size: 19px;
+    }
+
+    .skills-table p {
+        font-size: 14px;
+    }
+
+
+    /* PROJECTS */
+    .projects-table td {
+        padding: 15px;
+    }
+
+    .projects-table img {
+        height: 150px;
+    }
+
+    .projects-table h3 {
+        font-size: 17px;
+    }
+
+    .projects-table p {
+        font-size: 13px;
+    }
+
+
+    /* CONTACT */
+    #contact {
+        padding: 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        font-size: 13px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px;
+    }
+
+    .contact-form button {
+        font-size: 12px;
+    }
+}
+
+
+/* SMOOTH TRANSITIONS */
+button,
+a,
+input[type="submit"] {
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* GENERAL BUTTON HOVER */
+button:hover,
+input[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+
+/* BUTTON CLICK EFFECT */
+button:active,
+input[type="submit"]:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}

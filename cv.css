@@ -1,0 +1,207 @@
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background: #e9edf3;
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* CV CONTAINER */
+
+.cv {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px 55px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* HEADER */
+
+header {
+    border-bottom: 3px solid #243b64;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin: 0;
+    color: #243b64;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    margin: 5px 0 15px;
+    color: #667085;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact {
+    color: #475467;
+    font-size: 13px;
+}
+
+.contact p {
+    margin: 4px 0;
+}
+
+
+/* SECTIONS */
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #243b64;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid #d9dee8;
+    padding-bottom: 7px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin: 0;
+}
+
+
+/* EDUCATION */
+
+.education-item {
+    margin-bottom: 15px;
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #172033;
+}
+
+.education-item p {
+    margin: 3px 0;
+    color: #667085;
+}
+
+
+/* SKILLS */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.skill-card {
+    padding: 12px;
+    background: #f3f5f8;
+    border-left: 3px solid #243b64;
+}
+
+.skill-card h3 {
+    margin: 0 0 5px;
+    font-size: 14px;
+    color: #243b64;
+}
+
+.skill-card p {
+    font-size: 13px;
+}
+
+
+/* PERSONAL INFORMATION */
+
+.personal-info p {
+    margin: 8px 0;
+}
+
+
+/* PRINT BUTTON */
+
+.print-button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #243b64;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background: #172b4d;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    .cv {
+        padding: 25px 20px;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* PRINT */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    body {
+        padding: 0;
+        background: white;
+        font-size: 11pt;
+    }
+
+    .cv {
+        max-width: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .print-button {
+        display: none;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+
+}
